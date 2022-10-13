@@ -1,0 +1,54 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 50px;
+
+  .hero{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 800px) {
+      // height: 60vh;
+    }
+
+    h1{
+      max-width: 80%;
+      margin-bottom: 20px;
+      text-align: center;
+      color: black;
+
+      &.dark{
+        color: white;
+      }
+
+      @media screen and (min-width: 800px) {
+        font-size: 50px;
+      }
+    }
+
+    p{
+      margin-bottom: 50px;
+      text-align: center;
+      color: black;
+      width: 80%;
+
+      &.dark{
+        color: #fff;
+      }
+    }
+
+    button{
+      margin: 0;
+    }
+  }
+}
+
+
+
